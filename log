@@ -223,3 +223,14 @@ exercises.c:130:12: error: ‘Vector {aka struct <anonymous>}’ has no member n
             datos
 Compilation failed
 d121caf
+Mon Mar 14 01:57:23 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV’:
+exercises.c:130:21: error: comparison between pointer and integer [-Werror]
+     if (a->datos[n] != NULL) n++;
+                     ^~
+cc1: all warnings being treated as errors
+Compilation failed
+732c2bf

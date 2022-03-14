@@ -127,7 +127,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
 
   while(true){
 
-    if (a->dato[n] != NULL) n++;
+    if (a->datos[n] != NULL) n++;
     else break;
   }
 
