@@ -81,7 +81,7 @@ typedef struct {
 } Vector;
 
 Vector * crearVector(int n) {
-  vector *arreglo = NULL;
+  Vector *arreglo = NULL;
 
   arreglo->datos = (int *) calloc (n, sizeof(int));
 
