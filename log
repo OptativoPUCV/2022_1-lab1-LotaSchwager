@@ -202,3 +202,13 @@ exercises.c:129:11: error: ‘i’ undeclared (first use in this function)
            ^
 Compilation failed
 ad6e050
+Mon Mar 14 01:56:38 UTC 2022: 
+ exercises.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV’:
+exercises.c:130:14: error: invalid operands to binary != (have ‘Vector {aka struct <anonymous>}’ and ‘void *’)
+     if (a[i] != NULL) n++;
+         ~~~~ ^~
+Compilation failed
+0496c31

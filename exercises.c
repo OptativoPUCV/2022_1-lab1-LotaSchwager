@@ -3,6 +3,7 @@
 #include <string.h>
 #include <math.h>
 #include <ctype.h>
+#include <stdbool.h>
 //#include "exercises.h"
 
 /* 
@@ -122,7 +123,7 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-  int n = 0;
+  int n = 0,i;
 
   while(true){
 
@@ -130,7 +131,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
     else break;
   }
 
-  for (int i = 0; i < n; i++){
+  for (i = 0; i < n; i++){
 
     c->datos[i] = a->datos[i] + b->datos[i];
   }
