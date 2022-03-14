@@ -147,3 +147,9 @@ exercises.c:101:6: error: ‘Vector {aka struct <anonymous>}’ has no member na
       datos
 Compilation failed
 a3263ca
+Mon Mar 14 01:21:22 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|4
+total_score: 30/70
+1fb4a3c
