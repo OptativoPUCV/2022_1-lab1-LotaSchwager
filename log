@@ -306,3 +306,9 @@ exercises.c:144:7: error: variable ‘vectorA’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 07d8461
+Mon Mar 14 02:30:33 UTC 2022: 
+ exercises.c | 9 ++-------
+ 1 file changed, 2 insertions(+), 7 deletions(-)
+ tests:  8|0
+total_score: 70/70
+a0cdc06

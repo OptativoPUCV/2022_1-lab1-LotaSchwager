@@ -141,13 +141,8 @@ sumar (a1,a2)+(b1+b2). Almacene el resultado en el vector c.
 */
 void sumaV2(int a1, int a2, int b1, int b2, Vector *c){
 
-  int vectorA = {a1,a2};
-  int vectorB = {b1,b2};
-
   c->datos = (int *) calloc (2, sizeof(int));
 
-  for (int i = 0; i < 3; i++){
-
-    c->datos[i] = vectorA[i] + vectorB[i];
-  }
+  c->datos[0] = a1 + b1;
+  c->datos[1] = a2 + b2;
 }
