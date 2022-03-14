@@ -105,3 +105,18 @@ exercises.c:102:10: error: ‘Vector {aka struct <anonymous>}’ has no member n
           ^~
 Compilation failed
 e34ed71
+Mon Mar 14 01:18:31 UTC 2022: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘asignarValor’:
+exercises.c:102:10: error: ‘arreglo’ is a pointer; did you mean to use ‘->’?
+   arreglo.v[i] = valor;
+          ^
+          ->
+exercises.c:100:11: error: variable ‘arreglo’ set but not used [-Werror=unused-but-set-variable]
+   Vector *arreglo = malloc (sizeof(Vector));
+           ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+25041c4

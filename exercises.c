@@ -99,7 +99,7 @@ la cual asigna el valor a la posición i del vector v.
 void asignarValor(Vector * v, int i, int valor) {
   Vector *arreglo = malloc (sizeof(Vector));
   
-  arreglo->v[i] = valor;
+  arreglo.v[i] = valor;
 
 }
 
