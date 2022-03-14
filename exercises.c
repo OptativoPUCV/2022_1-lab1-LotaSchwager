@@ -83,6 +83,8 @@ typedef struct {
 Vector * crearVector(int n) {
   Vector *arreglo = NULL;
 
+  arreglo->datos = (int *) malloc (sizeof (int) * 1);
+
   arreglo->datos = (int *) calloc (n, sizeof(int));
 
   if (arreglo == NULL) exit(1);
