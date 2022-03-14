@@ -128,7 +128,7 @@ void sumaV(Vector * a, Vector * b, Vector * c) {
 
   c->datos = (int *) calloc (n, sizeof(int));
 
-  for (int i = 0; i < n; i++){
+  for (int i = 0; i <= n; i++){
 
     c->datos[i] = a->datos[i] + b->datos[i];
   }
