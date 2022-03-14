@@ -123,15 +123,12 @@ Función que suma los vectores `a` y `b` y
 actualiza el vector `c` con el resultado de la suma.
 */
 void sumaV(Vector * a, Vector * b, Vector * c) {
-  int n = 0,i;
+  int n = sizeof (a);
+  n = n / 4;
 
-  while(true){
+  c->datos = (int *) calloc (n, sizeof(int));
 
-    if (a->datos[n] != NULL) n++;
-    else break;
-  }
-
-  for (i = 0; i < n; i++){
+  for (int i = 0; i < n; i++){
 
     c->datos[i] = a->datos[i] + b->datos[i];
   }
