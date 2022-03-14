@@ -278,3 +278,31 @@ exercises.c:144:7: error: variable ‘vectorA’ set but not used [-Werror=unuse
 cc1: all warnings being treated as errors
 Compilation failed
 46159a3
+Mon Mar 14 02:29:19 UTC 2022: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘sumaV2’:
+exercises.c:144:21: error: excess elements in scalar initializer [-Werror]
+   int vectorA = {a1,a2};
+                     ^~
+exercises.c:144:21: note: (near initialization for ‘vectorA’)
+exercises.c:145:21: error: excess elements in scalar initializer [-Werror]
+   int vectorB = {b1,b2};
+                     ^~
+exercises.c:145:21: note: (near initialization for ‘vectorB’)
+exercises.c:151:26: error: subscripted value is neither array nor pointer nor vector
+     c->datos[i] = vectorA[i] + vectorB[i];
+                          ^
+exercises.c:151:39: error: subscripted value is neither array nor pointer nor vector
+     c->datos[i] = vectorA[i] + vectorB[i];
+                                       ^
+exercises.c:145:7: error: variable ‘vectorB’ set but not used [-Werror=unused-but-set-variable]
+   int vectorB = {b1,b2};
+       ^~~~~~~
+exercises.c:144:7: error: variable ‘vectorA’ set but not used [-Werror=unused-but-set-variable]
+   int vectorA = {a1,a2};
+       ^~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+07d8461
