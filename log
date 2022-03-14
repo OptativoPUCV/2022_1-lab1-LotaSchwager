@@ -120,3 +120,19 @@ exercises.c:100:11: error: variable ‘arreglo’ set but not used [-Werror=unus
 cc1: all warnings being treated as errors
 Compilation failed
 25041c4
+Mon Mar 14 01:19:40 UTC 2022: 
+ exercises.c | 5 ++---
+ 1 file changed, 2 insertions(+), 3 deletions(-)
+In file included from test.c:5:0:
+exercises.c: In function ‘asignarValor’:
+exercises.c:100:11: error: ‘v’ redeclared as different kind of symbol
+   Vector *v = malloc (sizeof(Vector));
+           ^
+exercises.c:99:28: note: previous definition of ‘v’ was here
+ void asignarValor(Vector * v, int i, int valor) {
+                            ^
+exercises.c:102:8: error: incompatible types when assigning to type ‘Vector {aka struct <anonymous>}’ from type ‘int’
+   v[i] = valor;
+        ^
+Compilation failed
+85d54fa
